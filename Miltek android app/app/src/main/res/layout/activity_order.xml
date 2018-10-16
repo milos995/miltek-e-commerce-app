@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_extra_large_15" />
+
+        <EditText
+            android:id="@+id/etZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCity"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:hint="@string/zip_code"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_extra_large_15" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etZipCode"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_extra_large_15" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddress"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textSize="@dimen/text_size_extra_large_15" />
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPhone"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvInTotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_total"
+                android:textSize="@dimen/text_size_extra_large_15" />
+
+            <TextView
+                android:id="@+id/tvInTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medim_10"
+                android:layout_toEndOf="@+id/tvInTotalLabel"
+                android:layout_toRightOf="@+id/tvInTotalLabel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_extra_large_15"
+                tools:text="19999.00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_below="@+id/llPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_order"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/padding_extra_large_20"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:background="@drawable/button"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvMyAddress"
+            android:text="@string/insert_my_address"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_extra_large_20"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:layout_below="@+id/tvOrder"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+</layout>

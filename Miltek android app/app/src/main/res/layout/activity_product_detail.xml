@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_broken_image"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivImage"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_extra_large_15"
+                android:textStyle="bold"
+                tools:text="Naslov" />
+
+            <TextView
+                android:id="@+id/tvDescriptionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginTop="@dimen/text_size_small_5"
+                android:paddingLeft="@dimen/padding_extra_large_20"
+                android:paddingRight="@dimen/padding_extra_large_20"
+                android:text="@string/specifications"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescriptionLabel"
+                android:layout_marginTop="@dimen/text_size_small_5"
+                android:paddingLeft="@dimen/padding_extra_large_20"
+                android:paddingRight="@dimen/padding_extra_large_20"
+                tools:text="adsasdasdasdasd" />
+
+            <TextView
+                android:id="@+id/tvPriceLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDescription"
+                android:layout_marginTop="@dimen/text_size_small_5"
+                android:paddingLeft="@dimen/padding_extra_large_20"
+                android:text="@string/price_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDescription"
+                android:layout_marginTop="@dimen/text_size_small_5"
+                android:layout_toEndOf="@+id/tvPriceLable"
+                android:layout_toRightOf="@+id/tvPriceLable"
+                android:paddingLeft="@dimen/padding_extra_large_20"
+                android:textColor="@color/colorAccent"
+                tools:text="19990 din." />
+
+            <TextView
+                android:id="@+id/tvAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPriceLable"
+                android:layout_marginBottom="@dimen/padding_medim_10"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCommentLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAddToCart"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:gravity="center_horizontal"
+                android:text="@string/rate_product"
+                android:textStyle="italic" />
+
+            <RatingBar
+                android:id="@+id/rbProductRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCommentLabel"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbProductRating"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:gravity="top"
+                android:hint="@string/comment"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <TextView
+                android:id="@+id/tvAddComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etComment"
+                android:layout_marginBottom="@dimen/padding_medim_10"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:text="@string/add_comment"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvComments"
+                android:layout_below="@id/tvAddComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/padding_medim_10"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvComments">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_marginLeft="@dimen/padding_extra_large_20"
+                android:layout_marginRight="@dimen/padding_extra_large_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvComments"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

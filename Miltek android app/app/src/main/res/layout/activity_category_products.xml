@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llSort"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medim_10"
+                android:layout_marginRight="@dimen/padding_medim_10"
+                android:layout_marginTop="@dimen/padding_small_5">
+
+                <TextView
+                    android:id="@+id/tvSort"
+                    android:text="@string/sort"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/sSort"
+                    android:layout_toRightOf="@id/tvSort"
+                    android:layout_marginLeft="@dimen/padding_small_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSort"
+                android:layout_marginBottom="@dimen/text_size_small_5"
+                android:layout_marginTop="@dimen/padding_small_5">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_marginLeft="@dimen/padding_medim_10"
+                android:layout_marginRight="@dimen/padding_medim_10"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSort"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

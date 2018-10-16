@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragments.CartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="20">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:layout_marginTop="@dimen/padding_small_5">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_data_available" />
+
+        <RelativeLayout
+            android:id="@+id/rlInTotal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rvCart"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvInTotalLabel"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginLeft="@dimen/padding_small_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_total"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvInTotal"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginLeft="@dimen/padding_small_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvInTotalLabel"
+                android:layout_toRightOf="@+id/tvInTotalLabel"
+                tools:text="19999999.00"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPlaceOrder"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:gravity="center_horizontal"
+                android:text="@string/continue_cart"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_small_5"
+                android:layout_marginBottom="@dimen/padding_small_5"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_toEndOf="@+id/ivProductImage"
+                android:layout_toRightOf="@+id/ivProductImage"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

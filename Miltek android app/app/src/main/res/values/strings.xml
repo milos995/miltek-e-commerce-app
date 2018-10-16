@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Miltek</string>
+    <string name="email">E-mail</string>
+    <string name="password">Lozinka</string>
+    <string name="new_user">Novi korisnik?</string>
+    <string name="signup">Registrujte se</string>
+    <string name="login">Prijavite se</string>
+    <string name="forgot_password">Zaboravili ste lozinku?</string>
+    <string name="send_password">Pošalji lozinku</string>
+    <string name="full_name">Ime i prezime</string>
+    <string name="retype_password">Ponovite lozinku</string>
+    <string name="already_member">Već ste registrovani?</string>
+    <string name="error">Greška</string>
+    <string name="success">Uspešno</string>
+    <string name="empty_error">Sva polja su obavezna</string>
+    <string name="general_error">Došlo je do greške</string>
+    <string name="email_error">Email adresa nije validna</string>
+    <string name="full_name_error">Ime i prezime može sadržati samo slova</string>
+    <string name="ok">OK</string>
+    <string name="login_success">Uspešno ste se prijavili</string>
+    <string name="password_error">Lozinka mora imati najmanje 6 karaktera</string>
+    <string name="retype_password_error">Lozinka i ponovljena lozinka nisu jednake</string>
+    <string name="know_password">Znate lozinku?</string>
+    <string name="email_empty_error">Email adresa je obavezna</string>
+    <string name="nav_home">Početna</string>
+    <string name="nav_category">Kategorije</string>
+    <string name="nav_orders_history">Istorija kupovine</string>
+    <string name="nav_cart">Korpa</string>
+    <string name="nav_profile">Profil</string>
+    <string name="logout">Odjavite se</string>
+    <string name="nav_open">Otvori</string>
+    <string name="nav_close">Zatvori</string>
+    <string name="add_to_cart">Dodaj u korpu</string>
+    <string name="price_label">Cena:</string>
+    <string name="quantity_label">Količina:</string>
+    <string name="featured_products">Izdvajamo iz ponude</string>
+    <string name="specifications">Specifikacije:</string>
+    <string name="categories">Kategorije</string>
+    <string name="cart">Korpa</string>
+    <string name="in_total">Ukupno:</string>
+    <string name="place_order">Naruči</string>
+    <string name="order">Narudžbina</string>
+    <string name="order_number">Narudžbina br.</string>
+    <string name="city">Grad</string>
+    <string name="zip_code">Poštanski broj</string>
+    <string name="address">Adresa</string>
+    <string name="phone_number">Broj telefona</string>
+    <string name="empty_cart_error">Vaša korpa je prazna</string>
+    <string name="quantity_cart_error">Morate uneti količinu za svaki proizvod</string>
+    <string name="skip">Preskoči</string>
+    <string name="not_logged_in">Niste prijavljeni</string>
+    <string name="guest_cart_error">Morate biti prijavljeni da biste dodali proizvod u korpu</string>
+    <string name="guest_comment_error">Morate biti prijavljeni da biste ostavili komentar</string>
+    <string name="continue_cart">Nastavi</string>
+    <string name="search_hint">Naziv, karakteristika...</string>
+    <string name="search">Pretraga</string>
+    <string name="no_data_available">Nije pronadjen ni jedan proizvod</string>
+    <string name="server_error">Došlo je do greške pri komunikaciji sa serverom</string>
+    <string name="empty_orders_history">Vaša istorija kupovine je prazna</string>
+    <string name="my_account">Moj nalog</string>
+    <string name="full_name_placeholder">Ime i prezime: %s</string>
+    <string name="email_placeholder">Email: %s</string>
+    <string name="save">Sačuvaj</string>
+    <string name="insert_my_address">Učitaj moju adresu za slanje</string>
+    <string name="shipping_address">Adresa za slanje:</string>
+    <string name="change_password">Promeni lozinku</string>
+    <string name="current_password">Trenutna lozinka</string>
+    <string name="new_password">Nova lozinka</string>
+    <string name="rate_product">Ocenite proizvod</string>
+    <string name="comment">Komentar</string>
+    <string name="add_comment">Dodaj komentar</string>
+    <string name="rating_placeholder">Ocena: %s/5</string>
+    <string name="comment_placeholder">Komentar: %s</string>
+    <string name="comments">Komentari:</string>
+    <string name="comment_error">Morate oceniti proizvod i uneti komentar</string>
+    <string name="sort">Sortiraj po:</string>
+    <string name="date">Datum:</string>
+    <string name="status">Status:</string>
+    <string-array name="sort_array">
+        <item>Ceni Rastuće</item>
+        <item>Ceni Opadajuće</item>
+        <item>Nazivu A-Z</item>
+    </string-array>
+    <string-array name="status_array">
+        <item>U obradi</item>
+        <item>Poslato</item>
+        <item>Završeno</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvProduct"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginBottom="@dimen/padding_small_5"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_broken_image"/>
+
+        <TextView
+            android:id="@+id/tvProductTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:layout_toRightOf="@+id/ivProductImage"
+            android:maxLength="20"
+            android:textStyle="bold"
+            tools:text="Naslov"/>
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductTitle"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:layout_toRightOf="@+id/ivProductImage"
+            android:maxLength="50"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin efficitur massa at lobortis. Aliquam ut sem mauris. Curabitur a odio vitae erat tincidunt tempor. In augue mi, dictum et nulla in, malesuada posuere ligula. Phasellus sodales pretium vehicula. Aenean luctus nunc vitae commodo tempor. Duis ornare fermentum dolor sed gravida. Morbi vulputate lobortis justo eu ullamcorper. Curabitur non feugiat odio. Sed at rutrum felis. "/>
+
+        <TextView
+            android:id="@+id/tvProductPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductDescription"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:layout_toRightOf="@+id/ivProductImage"
+            android:text="@string/price_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductDescription"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_toEndOf="@+id/tvProductPriceLabel"
+            android:layout_toRightOf="@+id/tvProductPriceLabel"
+            tools:text="1920 din."
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tvAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProductPriceLabel"
+            android:background="@drawable/button"
+            android:gravity="center_horizontal"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:layout_toRightOf="@+id/ivProductImage"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

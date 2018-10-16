@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="250dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_too_large_30"
+                android:src="@drawable/miltek_logo" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:paddingTop="@dimen/padding_small_5" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFullName"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:paddingTop="@dimen/padding_small_5" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:paddingTop="@dimen/padding_small_5" />
+
+            <EditText
+                android:id="@+id/etRetypePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPassword"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:hint="@string/retype_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/padding_small_5"
+                android:paddingTop="@dimen/padding_small_5" />
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etRetypePassword"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:background="@drawable/button"
+                android:gravity="center_horizontal"
+                android:text="@string/signup"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignUp"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_too_large_30"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAlreadyMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_member"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_small_5"
+                    android:layout_toRightOf="@id/tvNewUser"
+                    android:text="@string/login"
+                    android:textColor="@color/colorAccent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

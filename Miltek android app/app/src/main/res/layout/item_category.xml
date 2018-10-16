@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvCategory"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/padding_small_5"
+    android:layout_marginBottom="@dimen/padding_medim_10"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/ic_broken_image"
+            android:id="@+id/ivCategoryImage"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tvCategoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivCategoryImage"
+            tools:text="Naslov"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

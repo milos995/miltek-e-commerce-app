@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/padding_small_5"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginRight="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:maxLength="20"
+            android:textStyle="bold"
+            tools:text="Narudzbina 232" />
+
+        <TextView
+            android:id="@+id/tvOrderInformations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrder"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginRight="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            tools:text="11000 - Beograd, Klinska 17, 0652315862"
+            android:maxLength="100"/>
+
+        <LinearLayout
+            android:id="@+id/llInTotal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvOrderInformations"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginRight="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProductInTotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_total"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvInTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="@dimen/padding_small_5"
+                tools:text="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDate"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llInTotal"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginRight="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small_5"
+                tools:text="2015-05-09"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llDate"
+            android:layout_marginLeft="@dimen/padding_medim_10"
+            android:layout_marginRight="@dimen/padding_medim_10"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/padding_medim_10">
+
+            <TextView
+                android:id="@+id/tvStatusLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small_5"
+                tools:text="U obradi"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivRemoveOrdersHistory"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_remove"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

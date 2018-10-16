@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvComment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_extra_large_20"
+    android:layout_marginRight="@dimen/padding_extra_large_20"
+    android:layout_marginBottom="@dimen/padding_small_5">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_small_5"
+            android:layout_marginRight="@dimen/padding_small_5"
+            android:text="@string/full_name_placeholder" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_below="@+id/tvFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_marginLeft="@dimen/padding_small_5"
+            android:layout_marginRight="@dimen/padding_small_5"
+            android:text="@string/rating_placeholder" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRating"
+            android:layout_marginLeft="@dimen/padding_small_5"
+            android:layout_marginRight="@dimen/padding_small_5"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:text="@string/comment_placeholder" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
